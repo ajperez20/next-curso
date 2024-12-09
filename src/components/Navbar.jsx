@@ -1,11 +1,14 @@
 import Link from "next/link";
+import "./Navbar.css";
 
 //! Links: es un componente que provee next.js para el manejo del enrutado, me refiero a que te permite redireccionar usando botones y cosas así para que no tengas que recargar la página entera cada que se cambia de ruta.
 
 export default function Navbar() {
   return (
-    <nav>
-      <h1>Navbar</h1>
+    <nav className="navbar py-5">
+      <Link href="/">
+        <h1 className="text-3xl font-bold ">Nextjs Curso</h1>
+      </Link>
 
       <ul>
         <li>
